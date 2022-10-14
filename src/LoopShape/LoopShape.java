@@ -39,19 +39,24 @@ public class LoopShape {
 		// For every "leg" print a line that starts with "#" and has an amount of spaces
 		// that goes up by one for each time it repeats
 		// and ends with #'s up to the number of times it was looped
-
 		// Start at/at the beginning; do while; do at the end/what changes
 
-		// int l=0; l<leg;l++
-		for (int l = 0; l < leg; l++) {
-			System.out.print("#");
-			System.out.println();
-			
-			//do the leg teehee
-			
-			if (l=leg) {
-				//repeat sysout l times
+		// top
+		System.out.println("#");
+
+		// if leg>=1
+		// for l=1;l<leg;l++
+		// printline "#"
+		// for int r=1;r=<l;r++
+		// print ""
+		// middle
+		if (leg > 1) {
+			for (int l = 1; l < leg; l++) {
+				System.out.println("#");
+				for (int r = 1; r < 1; r++)
+					System.out.print("");
 			}
+			System.out.print("#");
 		}
 
 	}

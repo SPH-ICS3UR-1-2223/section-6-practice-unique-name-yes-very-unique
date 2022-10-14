@@ -16,6 +16,7 @@ public class ValidatePin {
 			guessedPin = declare.nextInt();
 		}
 		System.out.println("Welcome!");
+		declare.close();
 	}
 
 }
