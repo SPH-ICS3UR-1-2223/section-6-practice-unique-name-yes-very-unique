@@ -41,22 +41,21 @@ public class LoopShape {
 		// and ends with #'s up to the number of times it was looped
 		// Start at/at the beginning; do while; do at the end/what changes
 
-		// top
-		System.out.println("#");
-
-		// if leg>=1
-		// for l=1;l<leg;l++
-		// printline "#"
-		// for int r=1;r=<l;r++
-		// print ""
-		// middle
-		if (leg > 1) {
-			for (int l = 1; l < leg; l++) {
+		for (int line = 1; line <= leg; line++) {
+			if (line == 1) {
 				System.out.println("#");
-				for (int r = 1; r < 1; r++)
-					System.out.print("");
+			} else if (line == leg) {
+				for (int spaces = 0; spaces < leg; spaces++) {
+					System.out.print("#");
+				}
+				System.out.println();
+			} else {
+				System.out.print("#");
+				for (int spaces = 0; spaces < line - 2; spaces++) {
+					System.out.print(" ");
+				}
+				System.out.println("#");
 			}
-			System.out.print("#");
 		}
 
 	}
